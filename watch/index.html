@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#2F3A27',
+                img1bg: '#EFF2EB',
+              },
+              minHeight:{
+                '60vh':'60vh',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <div class="container-fluid min-h-60vh bg-primary">
+        <div class="container  mx-auto">
+          <!-- navbar -->
+            <nav class="flex justify-between items-center py-2">
+            <h1>Watch</h1>
+            <ul class="flex space-x-3 ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Review</a></li>
+            </ul>
+            <ul>
+                <img class="h-10 w-10 inline-block" src="" alt="">
+                <img class="h-10 w-10 inline-block" src="" alt="">
+            </ul>
+            </nav>
+
+          <!-- section1 content -->
+          <div class="content relative mt-16">
+            <h1 class="text-8xl text-slate-50 w-28">Panerai Submersible</h1>
+            <p class="w-96 text-slate-50 my-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="px-10 py-4 bg-white" href="#">Buy Now</a>
+            <img class="absolute right-0 top-0 bg-img1bg" src="./img/img1.png" alt="watch1">
+          </div>
+        </div>
+
+        <!-- section2  -->
+        <div class="section2 mt-10 bg-white">
+          <div class="img inline-block">
+            <img class="bg-img1bg mt-10 inline-block" src="./img/img1.png" alt="">
+            <div>
+            <p class="inline-block ">Marina Militare Carbotech
+              PAM979</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 </body>
 </html>
